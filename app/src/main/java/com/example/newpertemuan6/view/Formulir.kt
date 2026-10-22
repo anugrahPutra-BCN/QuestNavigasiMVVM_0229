@@ -81,3 +81,28 @@ fun FormIsian(
                     }
                 }
             }
+
+            // Input Alamat
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier.width(250.dp),
+                label = { Text(text = "Alamat") },
+                onValueChange = {}
+            )
+
+            // Jarak Spasi
+            Spacer(modifier = Modifier.height(30.dp))
+
+            // Tombol Submit
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth(fraction = 1f)
+                    .padding(all = 25.dp),
+                onClick = OnSubmitBtnClick
+            ) {
+                Text(stringResource(id = R.string.submit))
+            }
+        }
+    }
+}
