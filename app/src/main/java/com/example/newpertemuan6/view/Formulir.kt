@@ -48,4 +48,23 @@ fun FormIsian(
             modifier = Modifier.padding(paddingValues = isiRuang),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
-        )
+        ) {
+            // Input Nama Lengkap
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .padding(top = 20.dp)
+                    .width(250.dp),
+                label = { Text(text = "Nama Lengkap") },
+                onValueChange = {}
+            )
+
+            // Garis Pembatas
+            HorizontalDivider(
+                modifier = Modifier
+                    .padding(all = 20.dp)
+                    .width(250.dp),
+                thickness = Thickness,
+                color = Color.Red
+            )
