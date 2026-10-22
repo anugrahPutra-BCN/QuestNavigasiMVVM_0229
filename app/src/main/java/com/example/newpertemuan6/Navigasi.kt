@@ -11,3 +11,16 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.newpertemuan6.view.FormIsian
 import com.example.newpertemuan6.view.TampilData
+
+enum class Navigasi {
+    FormulirSaya,
+    Detail
+}
+
+@Composable
+fun DataApp(
+    navController: NavHostController = rememberNavController()
+) {
+    val konteks = LocalContext.current
+
+    Scaffold { isiRuang ->
